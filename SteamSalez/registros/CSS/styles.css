@@ -1,0 +1,494 @@
+html,body{
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #1b2838, #2a475e, #171a21);
+  background-attachment: fixed; 
+  min-height: 900px;            
+}
+
+
+/*Para el cabecero*/
+
+header {
+  background: linear-gradient(to right, #171a21, #1b2838);
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+
+header span {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/*Lo que manda al link de steam*/
+
+.Link {
+  color: #66c0f4;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.Link:hover {
+  color: #c7d5e0;
+}
+
+.steam-lg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0px 425px 0px 0px;
+}
+
+/*barra busqueda*/
+
+
+input[type="text"] {
+  background-color: #2a475e;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  width: 200px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  background-color: #3c6e91;
+}
+
+input[type="password"] {
+  background-color: #2a475e;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  width: 200px;
+  outline: none;
+}
+
+input[type="password"]:focus {
+  background-color: #3c6e91;
+}
+
+button {
+  background-color: #66c0f4;
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #549abf;
+}
+
+.btn-busqueda {
+  width: 20px;
+  height: 20px;
+}
+
+/*cuerpo */
+
+h1{
+  color: #2dd9e6;
+  font-size: 46px;
+  text-shadow: 0 0 15px rgba(0,255,153,0.4);
+}
+
+.Texto{
+  background: linear-gradient(to right, #171a21, #1b2838);
+  width: 830px;
+  height: 150px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  border-radius: 10px;
+}
+
+p {
+    color: rgb(206, 237, 247);
+    padding: 10px;
+}
+
+h2{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 0px 0px 0px ;
+}
+
+.juegoz {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.juegox {
+  border: 4px solid #c7d5e0;
+  margin: 16px;
+  background-color: #1b2838;
+}
+
+.juegox p{
+  margin: 5px 0px;
+}
+
+
+h3 {
+  padding: 0px 5px 0px 15px;
+}
+
+.imj {
+  padding: 0px 30px 0px 15px;
+}
+
+/* Inicio sesion boton*/
+
+.IS{
+  color: #171a21;
+}
+
+.btn-inicioSesion{
+  background-color: #2a475e;
+  color: white;
+  cursor: pointer;
+}
+
+.Iniciar {
+  color: black;
+  text-decoration: none;
+}
+
+div .link_ir{
+  text-decoration: none;
+  color: #66c0f4;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 850px;
+}
+
+.form form {
+  background-color: #1b2838;
+  text-align: center;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+
+.form form h2 {
+  padding: 0px;
+  color: #66c0f4;
+  box-shadow: rgb(102, 192, 244, 0.5)
+}
+
+h3{
+  color: white;
+}
+
+.btn-font{
+  margin: 30px 0px 0px 0px;
+}
+
+p.msg {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    line-height: 0;
+    color: #ff4c4c;
+}
+
+
+.usuario-saludo{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*  Imagen saludo */
+
+
+.perfil-container {
+    position: relative;
+    display: inline-block;
+}
+
+.perfil-btn {
+    width: 45px;
+    cursor: pointer;
+    border-radius: 25%;
+}
+
+.perfil-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: #1b2838;
+    border: 1px solid #2a475e;
+    padding: 10px;
+    border-radius: 6px;
+    min-width: 150px;
+}
+
+.perfil-menu a {
+    display: block;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.perfil-menu a:hover {
+    background: #2a475e;
+}
+
+.espaciado{
+  margin: 0px;
+  padding: 0px 60px 0px 0px;
+}
+
+.fav-btn {
+    display: block;
+    margin: 10px auto 10px auto;
+}
+
+/* Aviso añadir favoritos*/
+
+.aviso{
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+}
+
+#modal{
+  background-color: #2a475e;
+}
+
+#modal h2 {
+  color: #2dd9e6;
+}
+
+#modal::backdrop{
+  background-color: rgba(0, 0, 0, .55);
+}
+
+.advertencia{
+  background-color: #1b2838;
+  align-items: center;
+}
+
+#modal h2 {
+    color: #2dd9e6;
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+    padding: 15px 0;
+    text-shadow: 0 0 8px rgba(45, 217, 230, 0.5),
+                 0 0 14px rgba(45, 217, 230, 0.3);
+    border-bottom: 2px solid #2dd9e6;
+}
+
+
+/*perfil*/
+
+.delete-btn{
+    display: block;
+    margin: 10px auto 10px auto;
+}
+
+/*Toast*/
+
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #2a475e;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s, transform .3s;
+    transform: translateY(20px);
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.usuario-saludo2{
+  margin: 0px;
+  padding: 0px 0px 0px 250px;
+}
+
+/* Contenedor del formulario */
+#formImagen {
+    background: linear-gradient(to right, #171a21, #1b2838);
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+#nueva_imagen{
+  background-color: #2a475e;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 90%;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.NoImg{
+    background-color: #ff4c4c;
+}
+
+.NoImg:hover {
+    background-color: #d94343;
+}
+
+.CambioN{
+    background: linear-gradient(to right, #171a21, #1b2838);
+    width: 350px;
+    margin: 20px auto;
+    padding: 0px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.eliminado{
+  background-color: #1b2838;
+  max-width: 100px;
+  padding: 10px;
+}
+
+/* =============================
+   📱 AJUSTES PARA DISPOSITIVOS MÓVILES
+   ============================= */
+@media (max-width: 768px) {
+
+  /* --- HEADER --- */
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 10px;
+  }
+
+  header span {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .steam-lg {
+    padding: 0;
+  }
+
+  input[type="text"] {
+    width: 90%;
+  }
+
+  /* --- TITULOS --- */
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  h2 {
+    padding-top: 20px;
+    font-size: 22px;
+  }
+
+  /* --- CUADRO DESCRIPTIVO --- */
+  .Texto {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+
+  /* --- CARDS DE JUEGOS --- */
+  .juegoz {
+    justify-content: center;
+  }
+
+  .juegox {
+    width: 90%;
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
+
+  /* 🔥 FIX: evitar salida de imágenes */
+  .imj {
+    padding: 0 !important;
+  }
+
+  .juegox img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* --- FORMULARIOS LOGIN / REGISTRO --- */
+  .form {
+    min-height: 700px;
+    padding: 20px 0;
+  }
+
+  .form form {
+    width: 90%;
+    padding: 15px 10px;
+  }
+
+  input[type="password"],
+  input[type="text"] {
+    width: 90%;
+  }
+
+  .btn-font {
+    width: 90%;
+  }
+
+  /* --- MODAL --- */
+  #modal {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* --- PERFIL --- */
+  .perfil-menu {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .perfil-btn {
+    width: 40px;
+  }
+}
+
+
+/* 📱 Extra pequeño (teléfonos muy chicos) */
+@media (max-width: 480px) {
+  .juegox {
+    width: 95%;
+    box-sizing: border-box;
+  }
+}

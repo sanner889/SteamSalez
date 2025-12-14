@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Sales APP</title>
+    <link rel="stylesheet" href="registros/CSS/styles.css">
+</head>
+
+
+
+<body>
+
+    <header>
+    <span>
+        
+        <a href="https://store.steampowered.com/" class="Link">Pagina oficial de steam</a>
+        <img src="Images/Steam_icon_logo.svg.png" alt="steam" class="steam-lg">
+        <input type="text" id="busqueda" placeholder="Escribe el juego...">
+
+        <button id="btnBuscar">
+            <img src="Images/loupe-et-icone-de-recherche-couleur-noire.png" alt="Busqueda" class="btn-busqueda">
+        </button>
+
+        <button id="Inicio">
+            <span><a href="registros/login.php" class="Iniciar">Iniciar sesión</a></span>
+        </button>
+
+        <button id="registro">
+            <span><a href="registros/Registrase.php" class="Iniciar">Registrarse</a></span>
+        </button>
+
+    </span>
+    </header>
+
+    <h1>Ofertas de juegos en STEAM</h1> 
+
+    <div class="Texto">
+        <p>
+            En esta pagina encontraras la informacion de los juegos en descuento en la pagina de videojuegos STEAM <br>
+            ten encuenta que los precios dados aca son en USD, pues son la moneda internacional y que algunos juegos <br>
+            tienen precios regionales, es decir en Estados Unidos el juego cuesta 20 USD, pero en colombia el juego cuesta <br>
+            48.000 COP (12 USD aprox.), usualmente en STEAM los descuentos son globales, si el juego que buscas no tiene <br>
+            descuento mostrara el precio actual.
+        </p> 
+    </div>
+
+    <h2>🔥🔥Ofertas Destacadas🔥🔥</h2>
+
+    <div id="juegos" class="juegoz">Juegos en rebaja...</div>
+
+    <dialog id="modal">
+        <div class="advertencia"><h2>Inicia Sesion primero</h2></div>
+        <p>Inicia sesion o registrate para poder agregar juegos a favoritos</p>
+        <a href="" id="cerrar" class="Link">Cerrar</a>
+    </dialog>
+
+
+    <script src="script.js"></script>
+    <script src="Nologin.js"></script>
+
+    
+
+    
+</body>
+</html>
